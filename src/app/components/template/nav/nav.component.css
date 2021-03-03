@@ -1,0 +1,17 @@
+.sidenav{
+    background-color:  rgb(81, 56, 247);
+    max-width: 200px;
+    min-width: 100px;
+}
+
+.nav-list a:hover {
+    box-shadow:  rgb(248, 248, 250);;
+}
+
+.sidenav a{
+    color: white;
+}
+
+.sidenav i{
+    padding-right: 15px;
+}

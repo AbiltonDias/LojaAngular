@@ -1,5 +1,5 @@
 .sidenav{
-    background-color:  rgb(81, 56, 247);
+    background-color:  rgb(99, 67, 241);
     max-width: 200px;
     min-width: 100px;
 }
@@ -14,4 +14,10 @@
 
 .sidenav i{
     padding-right: 15px;
+}
+
+.content{
+    background-color: white;
+    padding: 16px;
+    color: black;
 }

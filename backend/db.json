@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Caneta BIC Preta",
+      "price": 5.89
+    },
+    {
+      "id": 2,
+      "name": "Borracha da Mônica",
+      "price": 8.31
+    },
+    {
+      "id": 3,
+      "name": "Livro de Portugues",
+      "price": 50.54
+    },
+    {
+      "id": 4,
+      "name": "Iphone 20",
+      "price": 50000.89
+    },
+    {
+      "name": "Armario",
+      "price": 1500.89,
+      "id": 6
+    },
+    {
+      "name": "Torradeira",
+      "price": "500.80",
+      "id": 7
+    },
+    {
+      "name": "Notebook",
+      "price": "5800.90",
+      "id": 8
+    },
+    {
+      "name": "Smartphone TLC",
+      "price": "700.99",
+      "id": 9
+    }
+  ]
+}

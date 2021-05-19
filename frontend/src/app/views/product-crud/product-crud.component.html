@@ -1,0 +1,26 @@
+<div class="header">
+    <button mat-raised-button (click)="handleSubmit()" class="button" appButton>
+        Novo Produto
+    </button>
+</div>
+<mat-card mat-elevation-z3 class="container">
+    <mat-card-title 
+        style="margin: 12px; color: #ff8c00;"
+    >PRODUTOS CADASTRADOS</mat-card-title>
+    <div class="content">
+        <table matTable mat-elevation-z2>
+            <tr>
+                <th>NOME</th>
+                <th>PREÇO</th>
+            </tr>
+            <th>
+                <tr *ngFor="let product of products">{{ product.name }} </tr>
+            </th>
+            <th>
+                <tr *ngFor="let product of products">R$ {{ product.price }} </tr>
+            </th>
+        </table>
+    </div>
+    
+</mat-card>
+    

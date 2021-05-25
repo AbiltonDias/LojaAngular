@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatToolbarModule } from '@angular/material/toolbar'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -24,6 +24,15 @@ import { RedDirective } from './directives/red.directive';
 import { ForDirective } from './directives/for.directive';
 import { ButtonDirective } from './directives/button.directive';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
+import { ProductRead2Component } from './components/product/product-read2/product-read2.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+
+import localePt from '@angular/common/locales/pt';
+import { registerLocaleData } from '@angular/common';
+import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
+
+registerLocaleData(localePt);
 
 @NgModule({
   declarations: [
@@ -36,7 +45,9 @@ import { ProductCreateComponent } from './components/product/product-create/prod
     RedDirective,
     ForDirective,
     ProductCreateComponent,
-    ButtonDirective
+    ButtonDirective,
+    ProductRead2Component,
+    ProductUpdateComponent
   ],
   imports: [
     BrowserModule,
@@ -52,9 +63,16 @@ import { ProductCreateComponent } from './components/product/product-create/prod
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatTableModule
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: LOCALE_ID,
+      useValue: 'pt-BR'
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

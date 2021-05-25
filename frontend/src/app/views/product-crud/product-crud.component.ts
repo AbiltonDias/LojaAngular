@@ -10,7 +10,7 @@ import { Product } from 'src/app/components/product/models/product.model';
 })
 export class ProductCrudComponent implements OnInit {
   products: Product[];
-
+  displayedColumns = ['id','name','price','action']
   constructor(
     private router: Router,
     private productService: ProductService  
@@ -25,5 +25,6 @@ export class ProductCrudComponent implements OnInit {
   handleSubmit(): void{
     this.router.navigate(['/products/create']);
   }
+
 
 }

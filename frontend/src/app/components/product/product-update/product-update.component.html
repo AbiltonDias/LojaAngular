@@ -1,31 +1,30 @@
 <mat-card>
-    <mat-card-title>Novo Produto</mat-card-title>
-    <mat-card-subtitle>Faça o cadastro do novo produto</mat-card-subtitle>
+    <mat-card-title>Altere o produto</mat-card-title>
+    <mat-card-subtitle>Realize as alterações necessárias</mat-card-subtitle>
     <form>
         <mat-form-field>
             <input 
                 matInput 
                 placeholder="Nome do Produto" 
-                [(ngModel)]="product.name" 
+                
                 name="name"
-            >
+            > <!--Dando error falta colocar aqui [(ngModel)]="product.name" -->
         </mat-form-field>
         <mat-form-field>
             <input 
                 matInput 
                 placeholder="Preço(R$) do Produto" 
-                [(ngModel)]="product.price"
+                
                 name="price"
-            >
+            > 
+            <!--Dando error falta colocar aqui [(ngModel)]="product.price" -->
         </mat-form-field>
     </form>
     <button mat-raised-button (click)="cancel()" appButton>
         Voltar
     </button>
-    <button mat-raised-button (click)="createProduct()" appButton>
+    <button mat-raised-button (click)="updateProduct()" appButton>
         Gravar
     </button>
 </mat-card>
-
-
 

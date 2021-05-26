@@ -118,10 +118,10 @@ Se for o caso, liste tarefas/funcionalidades que ainda precisam ser implementada
 Liste o time responsável pelo desenvolvimento do projeto
 
 | [<img src="https://avatars.githubusercontent.com/u/14594735?s=60&v=4" width=115><br><sub>Abilton Dias</sub>](https://github.com/AbiltonDias) 
-| :---: | :---: | :---: 
+
 
 ## Licença 
 
 The [MIT License]() (MIT)
 
-Copyright :copyright: Ano - Titulo do Projeto
+Copyright :copyright: Ano - Store com Angular9

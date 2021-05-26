@@ -1,0 +1,39 @@
+<mat-card>
+    <mat-card-title>Deletar Produto</mat-card-title>
+    <mat-card-subtitle>Campo de delete de produto, deseja realmente deletar produto?</mat-card-subtitle>
+    <form>
+        <mat-form-field>
+            <input 
+                matInput
+                placeholder="Nome do Produto"
+                [value]="product.name"
+                name="name"
+                disabled
+            >
+        </mat-form-field>
+        <mat-form-field>
+            <input 
+                matInput
+                placeholder="Preço do Produto"
+                [value]="product.price"
+                name="price"
+                disabled
+            >
+        </mat-form-field>
+    </form>
+    <button
+        mat-raised-button
+        (click)="cancel()"
+        appButton
+    >
+        Cancelar
+    </button>
+    <button
+        mat-raised-button
+        (click)="deleteProduct()"
+        color="warn"
+    >
+        Excluir
+    </button>
+
+</mat-card>

@@ -1,7 +1,9 @@
-import { ProductService } from './../../components/product/services/product.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router'
+
 import { Product } from 'src/app/components/product/models/product.model';
+import { HeaderService } from './../../components/template/header/header.service';
+import { ProductService } from './../../components/product/services/product.service';
 
 @Component({
   selector: 'app-product-crud',
@@ -13,8 +15,15 @@ export class ProductCrudComponent implements OnInit {
   displayedColumns = ['id','name','price','action']
   constructor(
     private router: Router,
-    private productService: ProductService  
-  ) { }
+    private productService: ProductService,
+    private headerService: HeaderService  
+  ) { 
+    headerService.headerData = {
+      title: 'Cadastro de Produtos',
+      icon: 'storefront',
+      routeUrl: '/products'
+    }
+  }
 
   ngOnInit(): void {
     this.productService.get().subscribe(products => {

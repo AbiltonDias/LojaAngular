@@ -16,4 +16,7 @@ body {
 .green-snackbar{
     background-color: rgb(81, 158, 65);
 }
+.red-snackbar{
+    background-color: #e35e6b;
+}
 

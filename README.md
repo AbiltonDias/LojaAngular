@@ -64,7 +64,7 @@ Liste todas as dependencias e libs que o usuário deve ter instalado na máquina
 No terminal, clone o projeto: 
 
 ```
-git clone 
+git clone https://github.com/AbiltonDias/LojaAngular.git
 ```
 
 ... 
@@ -77,6 +77,9 @@ Passos para executar projeto:
 4 - Outro terminal, cd backend
 5 - yarn server -- executa a api no backend
 
+Executando os passos deve funcionar da seguinte forma:
+
+<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c46ba055-d3d5-49fc-b5ec-fd0d9783ce45/Frontend.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210526%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210526T024802Z&X-Amz-Expires=86400&X-Amz-Signature=93a9b3e6a483e0e92055511858f1a6ab7b8a0e75eca60f68f6f3228a70513e8d&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Frontend.gif%22" >
 
 ## Como rodar os testes
 
